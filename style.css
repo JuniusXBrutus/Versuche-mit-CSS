@@ -1,0 +1,83 @@
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0
+        }
+
+        
+
+        header {
+            background-color: antiquewhite;
+            padding: 1rem;
+        }
+        
+        header h1,h2,h3 {
+            text-align: center;
+            line-height: 1em
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: gainsboro;
+            padding: 1rem;
+            }
+        
+        nav ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            column-gap: 2em
+        }
+        
+
+        .site { display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;}
+        
+        main {
+            min-height: 90vh;
+            margin: 0;
+        }
+
+        footer {
+            background-color: antiquewhite;
+            padding: 1rem;
+        }
+
+        .left-side, .right-side { background-color: palevioletred;
+        width: 150px;
+        min-height: 90vh;
+        display: none;
+        margin: 1em 0
+        }
+        
+        .left-side, .right-side {padding:0.5em;}
+        
+        .posts {
+            min-height: 90vh;
+            min-width: 360px;
+            max-width: 500px;
+            margin: auto;
+        }
+        
+.text {         border-style: solid;
+                padding: 2em 3em;
+    margin: 1em
+
+}
+        
+        @media only screen and (min-width: 850px) {
+            .left-side, .right-side {
+                display: block;
+                flex-wrap: nowrap;
+                       
+            }
+            
+        }
+
+        
+    </style>
+</head>
