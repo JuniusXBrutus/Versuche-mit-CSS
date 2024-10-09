@@ -1,83 +1,143 @@
- <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: 0
-        }
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: 0
+ }
 
-        
+p {font-size: 11px;
+    line-height: 2em}
 
-        header {
-            background-color: antiquewhite;
-            padding: 1rem;
-        }
-        
-        header h1,h2,h3 {
-            text-align: center;
-            line-height: 1em
-        }
+/* - - - Typographie - - -
 
-        nav {
-            position: sticky;
-            top: 0;
-            background-color: gainsboro;
-            padding: 1rem;
-            }
-        
-        nav ul{
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            column-gap: 2em
-        }
-        
 
-        .site { display: flex;
-        flex-wrap: wrap;
-        max-width: 1000px;
-        margin: auto;}
-        
-        main {
-            min-height: 90vh;
-            margin: 0;
-        }
+ - - - Typographie - - - */
 
-        footer {
-            background-color: antiquewhite;
-            padding: 1rem;
-        }
 
-        .left-side, .right-side { background-color: palevioletred;
-        width: 150px;
-        min-height: 90vh;
-        display: none;
-        margin: 1em 0
-        }
-        
-        .left-side, .right-side {padding:0.5em;}
-        
-        .posts {
-            min-height: 90vh;
-            min-width: 360px;
-            max-width: 500px;
-            margin: auto;
-        }
-        
-.text {         border-style: solid;
-                padding: 2em 3em;
-    margin: 1em
 
+ img {
+     width: 100%;
 }
-        
-        @media only screen and (min-width: 850px) {
-            .left-side, .right-side {
-                display: block;
-                flex-wrap: nowrap;
-                       
-            }
-            
-        }
 
-        
-    </style>
-</head>
+ header {
+     background-color: antiquewhite;
+     padding: 1rem;
+ }
+
+ header h1,
+ h2,
+ h3 {
+     text-align: center;
+     line-height: 1em
+ }
+
+ nav {
+     position: sticky;
+     top: 0;
+     background-color: gainsboro;
+     padding: 1rem;
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     column-gap: 2em
+ }
+
+
+ .site {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     max-width: 1000px;
+     margin: auto;     
+     
+     font-family: verdana;
+     font-size: 9pt;
+     line-height: 1.5;
+     
+ }
+
+ main {
+     min-height: 90vh;
+     margin: 0;
+ }
+
+ footer {
+     background-color: antiquewhite;
+     padding: 1rem;
+ }
+
+ .left-side,
+ .right-side {
+     border-style: dotted;
+     width: 150px;
+     min-height: 90vh;
+     display: none;
+     margin: 1em 0
+ }
+
+
+ .commercial {
+     padding: 0.5em 1em 1em 2em;
+     background-color: palevioletred;
+     font-size: 8px;
+     line-height: 1em;
+     margin-bottom: 3em;
+     
+ }
+
+.commercial img { resize: 80%;
+                  }
+
+ .posts {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: stretch;
+     min-height: 90vh;
+     min-width: 360px;
+     max-width: 600px;
+     margin: auto;
+ }
+
+ .text {
+     border-style: solid;
+     padding: 2em 3em;
+     min-width: 200px;
+     max-width: 350px;
+     margin: 1em;
+     
+
+
+ }
+
+
+ .archiv, .news {
+    
+    
+     width: 100px;
+     margin: 1em;
+     padding: 1em 2em;
+     border-style: solid;
+ }
+
+ @media only screen and (min-width: 925px) {
+
+     .left-side,
+     .right-side {
+         display: block;
+         flex-wrap: nowrap;
+
+     }
+
+ }
+
+ @media only screen and (max-width: 600px) {
+     .archiv, .news {display: none}
+     
+     .text {margin: 1em auto
+     }
+     
+}
+
+
