@@ -45,6 +45,11 @@ p {font-size: 11px;
  }
 
 
+ main {
+     min-height: 90vh;
+     margin: 0;
+ }
+
  .site {
      display: flex;
      flex-wrap: wrap;
@@ -58,10 +63,6 @@ p {font-size: 11px;
      
  }
 
- main {
-     min-height: 90vh;
-     margin: 0;
- }
 
  footer {
      background-color: antiquewhite;
@@ -91,31 +92,30 @@ p {font-size: 11px;
                   }
 
  .posts {
-     display: flex;
-     flex-wrap: wrap;
+     display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
      align-items: stretch;
      min-height: 90vh;
-     min-width: 360px;
+     min-width: 300px;
      max-width: 600px;
      margin: auto;
+     
  }
 
  .text {
      border-style: solid;
      padding: 2em 3em;
-     min-width: 200px;
-     max-width: 350px;
      margin: 1em;
-     
+     order: 2;
 
 
  }
 
+.news {order: 1}
+.archiv {order: 3}
 
  .archiv, .news {
-    
-    
-     width: 100px;
+              
      margin: 1em;
      padding: 1em 2em;
      border-style: solid;
@@ -132,10 +132,12 @@ p {font-size: 11px;
 
  }
 
- @media only screen and (max-width: 600px) {
-     .archiv, .news {display: none}
+ @media only screen and (max-width: 601px) {
+     .post {flex-direction: column;
+     min-width: none}
      
-     .text {margin: 1em auto
+     .archiv, .news {display: none}
+          .text {margin: 1em auto
      }
      
 }
